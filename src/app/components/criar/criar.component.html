@@ -1,1 +1,26 @@
-<p>criar works!</p>
+<div class="row g-3">
+    <Div class="col-md-6">
+    <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Nome</label>
+        <input type="text" class="form-control"  #nome>
+      </div>
+
+    <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control"  #sobrenome>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="text" class="form-control"  #email>
+    </div>
+
+    <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Idade</label>
+        <input type="number" class="form-control"  #idade>
+    </div>
+    </Div>
+    <div class="col-12">
+      <button class="btn btn-primary" (click)="criarUsuario(nome.value,sobrenome.value,email.value,idade.value)">Criar</button>
+    </div>
+</div>

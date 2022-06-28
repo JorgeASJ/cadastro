@@ -13,7 +13,7 @@ export class CrudService {
   }
 
   Criar(form:any) {
-    return this._HttpClient.get('https://localhost:44393/v1/Teste/Criar');
+    return this._HttpClient.post('https://localhost:44393/v1/Teste/Criar',form);
   }
 
   Deletar(){
